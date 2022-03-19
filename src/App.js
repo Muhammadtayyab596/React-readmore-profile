@@ -7,30 +7,14 @@ function App(props) {
   const [isReadMore, setState] = useState(false);
 
   function toggleBtn() {
-    // console.log("working");
     setState(!isReadMore);
   }
 
-  // if (text.length >= size && isReadMore == false) {
-  //   return (
-  //     <p>
-  //       {text.slice(0, size)}
-  //       <button onClick={toggleBtn}>Read More</button>
-  //     </p>
-  //   );
-  // } else {
-  //   return (
-  //     <p>
-  //       {text}
-  //       <button onClick={toggleBtn}>Read Less</button>
-  //     </p>
-  //   );
-  // }
-
+  
   return (
     <div className="App">
       <div className="Avatar">
-        <img src={Avatar} />
+        <img src={Avatar} alt="Profile Pic" />
       </div>
 
       <h1>Muhammad Tayyab</h1>
@@ -45,7 +29,7 @@ function App(props) {
       </div>
       <div className="connectWith">
         <h4>Connect with us:</h4>
-        <a>
+        <a href="">
           <i class="fab fa-facebook"></i>
         </a>
         <a>
